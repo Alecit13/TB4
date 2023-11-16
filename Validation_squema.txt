@@ -1,0 +1,112 @@
+db.createCollection('especies', {
+  validator: {
+    $jsonSchema: {
+      bsonType: 'object',
+      required: ['id_especie', 'nombre_cientifico', 'nombre_comun', 'descripcion', 'dieta', 'cantidad_ejemplares', 'estado_conservacion','foto'],
+      properties: {
+        id_especie: {
+          bsonType: 'int'
+        },
+        nombre_cientifico: {
+          bsonType: 'string'
+        },
+        nombre_comun: {
+          bsonType: 'string'
+        },
+        descripcion: {
+          bsonType: 'string'
+        },
+        dieta: {
+          bsonType: 'string'
+        },
+        cantidad_ejemplares: {
+          bsonType: 'string'
+        },
+        estado_conservacion: {
+          bsonType: 'string'
+        },
+
+        foto:{
+        bsonType:'string'
+        }
+      }
+    }
+  }
+})
+
+db.createCollection('especiesprincipales', {
+  validator: {
+    $jsonSchema: {
+      bsonType: 'object',
+      required: ['id_especie_coleccion', 'nombre_comun', 'foto'],
+      properties: {
+        id_especie_coleccion: {
+          bsonType: 'int'
+        },
+        nombre_comun: {
+          bsonType: 'string'
+        },
+        foto: {
+          bsonType: 'string'
+        }
+      }
+    }
+  }
+})
+
+
+
+db.createCollection('proyectos', {
+  validator: {
+    $jsonSchema: {
+      bsonType: 'object',
+      required: ['id_proyecto', 'nombre','fecha_creacion','fecha_finalizada'],
+      properties: {
+        id_especie_coleccion: {
+          bsonType: 'int'
+        },
+        nombre: {
+          bsonType: 'string'
+        },
+        descripcion: {
+          bsonType: 'string'
+        },
+ 	    fecha_creacion: {
+          bsonType: 'date'
+        },
+        fecha_finalizada: {
+          bsonType: 'date'
+        }
+      }
+    }
+  }
+})
+
+db.createCollection('organizaciones1', {
+  validator: {
+    $jsonSchema: {
+      bsonType: 'object',
+      required: ['id_organizacion', 'nombre', 'sector', 'descripcion','relacion','foto'],
+      properties: {
+        id_especie_coleccion: {
+          bsonType: 'int'
+        },
+        nombre: {
+          bsonType: 'string'
+        },
+	sector: {
+          bsonType: 'string'
+        },
+        descripcion: {
+          bsonType: 'string'
+        },
+ 	relacion: {
+          bsonType: 'string'
+        },
+        foto: {
+          bsonType: 'string'
+        }
+      }
+    }
+  }
+})

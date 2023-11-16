@@ -1,0 +1,521 @@
+db.especiesprincipales.insertMany([
+{
+id_especie_coleccion:001, //referencia a especies
+nombre_comun:'Tremarctos ornatus',
+foto: 'https://www.javeriana.edu.co/pesquisa/wp-content/uploads/2020/11/oso-de-antojos-en-colombia.jpg'
+},
+{id_especie_coleccion:002, //referencia a especies
+nombre_comun: 'Condor Andino',
+foto:'https://static.nationalgeographic.es/files/styles/image_3200/public/2225.600x450.jpg?w=710&h=533'
+},
+{id_especie_coleccion:003, //referencia a especies
+nombre_comun:'Gato de los Andes',
+foto: 'www.canva.com/design/DAFtJvO7jwM/HHIRtRBhQfJzwL_9Qey0UA/edit?utm_content=DAFtJvO7jwM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+}
+])
+
+
+db.especies.insertMany([
+
+{
+	id_especie: 001,
+	nombre_cientifico: 'Tremarctos ornatus',
+	nombre_comun: 'Oso andino',
+	descripcion: 'El oso andino (Tremarctos ornatus) es el único oso de Sudamérica y es endémico de los Andes tropicales. De tamaño mediano en comparación con otros osos, mide entre 1,30 y 1,90 metros de alto y pesa en promedio entre 80 y 125 kilogramos, siendo el macho más grande que la hembra. Una característica distintiva del oso andino es la presencia de pelo blanco alrededor de los ojos en forma circular, lo cual le da la apariencia de llevar anteojos.',
+	dieta: 'Este oso se alimenta principalmente de frutas, bromelias, miel y pequeños mamíferos',
+	cantidad_ejemplares: '5750',
+	estado_conservacion: 'Peligro de extincion',
+	foto:'https://www.javeriana.edu.co/pesquisa/wp-content/uploads/2020/11/oso-de-antojos-en-colombia.jpg',
+	proyectos:[{id: 001,nombre:'Integrated Tiger Habitat Conservation Programme – Phase I'},
+	{id:002, nombre:'SOS African Wildlife'}
+	]//referencia de proyectos
+},
+
+{
+	id_especie: 002,
+	nombre_cientifico: 'Vultur gryphus',
+	nombre_comun: 'Cóndor andino',
+	descripcion: 'El cóndor andino es una imponente ave rapaz de los Andes, con una envergadura de hasta 3 metros, un pico blanco y negro, y un peso de hasta 15 kilogramos. Cumple un importante rol como carroñero en el ecosistema andino.',
+	dieta: 'El cóndor andino se alimenta principalmente de carroña.',
+	cantidad_ejemplares: '301',
+	estado_conservacion: 'Peligro de extinción',
+	foto:'https://static.nationalgeographic.es/files/styles/image_3200/public/2225.600x450.jpg?w=710&h=533',
+	proyectos:[{id: 001,nombre:'Integrated Tiger Habitat Conservation Programme – Phase I'},
+	{id:002, nombre:'SOS African Wildlife'}
+	]///referencia de proyectos
+
+},
+
+{
+	id_especie: 003,
+	nombre_cientifico: 'Leopardus jacobita',
+	nombre_comun: 'Gato de los Andes',
+	descripcion: 'El gato andino es un felino silvestre que habita en la región de los Andes en Sudamérica. Tiene un tamaño mediano, pelaje gris cenizo con manchas café rojizas-amarillentas y una cola muy larga. Vive en áreas montañosas de altitudes elevadas y se encuentra en peligro de extinción debido a la pérdida de su hábitat y la caza ilegal.',
+	dieta: 'Se alimenta de roedores de pequeño y mediano tamaño de los géneros Abrothrix, Chinchilla, Lagidium, Ctenomys, Phyllotis, entre otros, además de aves acuáticas, terrestres, huevos y reptiles.',
+	cantidad_ejemplares: '1400',
+	estado_conservacion: 'Peligro de extinción',
+	foto:'https://www.ngenespanol.com/wp-content/uploads/2022/11/Gato_andino.jpg',
+	proyectos:[{id: 001,nombre:'Integrated Tiger Habitat Conservation Programme – Phase I'},
+	{id:002, nombre:'SOS African Wildlife'}
+	]///referencia de proyectos
+
+},
+
+{
+	id_especie: 004,
+	nombre_cientifico: 'Myrmecophaga tridactyla',
+	nombre_comun: 'Oso hormiguero gigante',
+	descripcion: 'El oso hormiguero gigante, también conocido como yurumí, es un curioso mamífero sudamericano. Se caracteriza por tener la cabeza muy pequeña y un hocico largo y convexo, adaptado especialmente para su alimentación. Su pelaje es de color amarillo dorado y puede llegar a medir más de dos metros desde el hocico hasta la cola. Es la especie más grande de los cuatro tipos de osos hormigueros.',
+	dieta: 'Su alimentación es insectívora, básicamente de hormigas y termitas.',
+	cantidad_ejemplares: '450',
+	estado_conservacion: 'Peligro de extinción',
+	foto:'https://i0.wp.com/laderasur.com/wp-content/uploads/2022/02/oso-hormiguero-1-1200x800-1.jpg?ssl=1',
+	proyectos:[{id: 001,nombre:'Integrated Tiger Habitat Conservation Programme – Phase I'},
+	{id:002, nombre:'SOS African Wildlife'}
+	]//referencia de proyectos
+
+},
+
+{
+	id_especie: 005,
+	nombre_cientifico: 'Pudu mephistophiles',
+	nombre_comun: 'Pudu',
+	descripcion: 'El pudú es un pequeño ciervo que alcanza una longitud máxima de 70 cm y una altura de 32 a 35 cm en la grupa. Su peso varía entre los 3,3 y 6 kg. Sus cuernos son cortos y posee orejas pequeñas y redondeadas. El color de su pelaje es rojizo en el tronco, con la garganta de tonalidad amarillo pardusco y la cabeza de color negro.',
+	dieta: 'Se alimenta de varias especies vegetales que conforman el bosque húmedo, templado y frío del sur de América.',
+	cantidad_ejemplares: '250',
+	estado_conservacion: 'Peligro de extinción',
+	foto:'https://upload.wikimedia.org/wikipedia/commons/4/43/Southern_Pudu,_Edinburgh_Zoo.jpg',
+	proyectos:[{id: 001,nombre:'Integrated Tiger Habitat Conservation Programme – Phase I'},
+	{id:002, nombre:'SOS African Wildlife'}
+	]///referencia de proyectos
+
+},
+
+{
+	id_especie: 006,
+	nombre_cientifico: 'Oreonax flavicauda',
+	nombre_comun: 'Mono choro de cola amarilla',
+	descripcion: 'El mono choro de cola amarilla es el mamífero endémico más grande del Perú. Esta especie puede llegar a medir 54 centímetros y anda en grupos de entre cinco y 18 individuos. Vive en bosques con árboles grandes y altos, que puedan aguantar su peso.',
+	dieta: 'Su alimentación se basa en frutas, hojas y flores',
+	cantidad_ejemplares: '2500',
+	estado_conservacion: 'Peligro de extinción',
+	foto:'https://upload.wikimedia.org/wikipedia/commons/8/89/Cola_amarilla.jpg',
+	proyectos:[{id: 001,nombre:'Integrated Tiger Habitat Conservation Programme – Phase I'},
+	{id:002, nombre:'SOS African Wildlife'}
+	]///referencia de proyectos
+
+},
+
+{
+	id_especie: 007,
+	nombre_cientifico: 'Tapirus pinchaque',
+	nombre_comun: 'Danta montañera',
+	descripcion: 'La danta montañera Es el tapir más pequeño de las cuatro especies reconocidas y es el único que vive fuera de los bosques tropicales en estado salvaje. Se distingue fácilmente de otras especies por su tamaño y hábitat.',
+	dieta: 'Se alimenta de hojas, tallos y frutos',
+	cantidad_ejemplares: '400',
+	estado_conservacion: 'Peligro de extinción',
+	foto:'https://imgs.mongabay.com/wp-content/uploads/sites/25/2022/02/23044459/Gustavo-Adolfo-Pisso-Florez-PNN-Purace%CC%81-22-768x512.jpg',
+	proyectos:[{id: 001,nombre:'Integrated Tiger Habitat Conservation Programme – Phase I'},
+	{id:002, nombre:'SOS African Wildlife'}
+	]///referencia de proyectos
+
+},
+
+{
+	id_especie: 008,
+	nombre_cientifico: 'Telmatobius culeus',
+	nombre_comun: 'Rana Gigante del Lago Titicaca',
+	descripcion: 'La Rana Gigante es una especie de anfibio anuro y es endémica del Lago Titicaca, es decir que solo vive en la cuenca del Lago Titicaca. Es la rana acuática más grande del mundo y es una especie exclusivamente acuática.',
+	dieta: 'Se alimentan de moluscos, crustáceos, gusanos y larvas de insectos acuáticos, también incluye en su dieta algas grandes y en algunas ocasiones puede comer peces pequeños típicos del lago.',
+	cantidad_ejemplares: '100000',
+	estado_conservacion: 'Peligro de extinción',
+	foto:'https://extincionanimal.org/wp-content/uploads/2020/05/Rana-gigante-del-lago-titicaca-3.jpg\n',
+	proyectos:[{id: 001,nombre:'Integrated Tiger Habitat Conservation Programme – Phase I'},
+	{id:002, nombre:'SOS African Wildlife'}
+	]///referencia de proyectos
+
+},
+
+{
+	id_especie: 009,
+	nombre_cientifico: 'Inia geoffrensis',
+	nombre_comun: 'Delfín rosado',
+	descripcion: 'El delfín rosado, también conocido como bufeo, es la especie más grande de los delfines de río. Puede alcanzar una longitud máxima de 2,5 metros y pesar hasta 98,5 kg. Este hermoso mamífero acuático tiene una apariencia distintiva, con un cuerpo robusto y una piel de color rosado intenso.',
+	dieta: 'Los delfines del Amazonas se alimentan en su mayoría de pequeños peces, tortugas y cangrejos.',
+	cantidad_ejemplares: '200',
+	estado_conservacion: 'Peligro de extinción',
+	foto:'https://t1.ea.ltmcdn.com/es/posts/8/6/2/el_delfin_rosado_del_amazonas_en_peligro_de_extincion_causas_25268_600.jpg\n',
+	proyectos:[{id: 001,nombre:'Integrated Tiger Habitat Conservation Programme – Phase I'},
+	{id:002, nombre:'SOS African Wildlife'}
+	]///referencia de proyectos
+
+},
+
+{
+	id_especie: 010,
+	nombre_cientifico: 'Phytotoma raimondii',
+	nombre_comun: 'Cortarramas peruano',
+	descripcion: 'El Cortarramas peruano es una especie endémica de la costa norte y central de Perú. Tiene el pico relativamente corto y poderoso, de punta algo redondeada y con bordes levemente aserrados. Es llamativa una potente cresta que eriza cuando se alarma. Su voz recuerda al rasquido que se produce al frotar las púas de un peine.',
+	dieta: 'La cortarrama peruana es un ave exclusivamente vegetariana que utiliza su pico de bordes aserrados para cortar las ramitas, brotes, hojas y frutos de los que se alimenta.',
+	cantidad_ejemplares: '500',
+	estado_conservacion: 'Amenazado de extinción',
+	foto:'https://diariocorreo.pe/resizer/LyssXToJvJ7GZbxXSbKrA6wFB2c=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/7UE2D6XNPZCMRDISM2MICXD4LQ.jpg\n',
+	proyectos:[{id: 001,nombre:'Integrated Tiger Habitat Conservation Programme – Phase I'},
+	{id:002, nombre:'SOS African Wildlife'}
+	]///referencia de proyectos
+
+}
+
+]);
+
+
+db.proyectos.insertMany([
+
+{
+	id_proyecto: 001,
+	nombre: 'Integrated Tiger Habitat Conservation Programme – Phase I',
+	descripcion: 'Tigres',
+	fecha_creacion: new Date(2014,12,11),
+	fecha_finalizada:new Date(2025,01,30),
+    organizaciones:[{
+    id_organizacion: 001,
+	nombre:'Conservación Amazonia',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FConservacionAmazonica%2F&psig=AOvVaw1La4pMgBusiwFMSdncu6qe&ust=1700182178769000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCz-qemx4IDFQAAAAAdAAAAABAE'
+    },
+    {
+    id_organizacion: 002,
+	nombre:'Fundación Sierra Blanca',
+	foto: ''
+    },
+    {
+    id_organizacion: 003,
+	nombre:'ONG Marinos del Pacífico',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ecoceanica.org%2F&psig=AOvVaw1XLvl7IEg7PF82BFhaxUCK&ust=1700182231341000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIii9sCmx4IDFQAAAAAdAAAAABAE'
+    },
+    ]
+},
+
+
+{
+	id_proyecto: 002,
+	nombre: 'SOS African Wildlife',
+	descripcion: 'Carnivoros Africanos',
+	fecha_creacion: new Date(2017,02,01),
+	fecha_finalizada: new Date(2025,01,30),
+	organizaciones:[{
+    id_organizacion: 001,
+	nombre:'Conservación Amazonia',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FConservacionAmazonica%2F&psig=AOvVaw1La4pMgBusiwFMSdncu6qe&ust=1700182178769000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCz-qemx4IDFQAAAAAdAAAAABAE'
+    },
+    {
+    id_organizacion: 002,
+	nombre:'Fundación Sierra Blanca',
+	foto: ''
+    },
+    {
+    id_organizacion: 003,
+	nombre:'ONG Marinos del Pacífico',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ecoceanica.org%2F&psig=AOvVaw1XLvl7IEg7PF82BFhaxUCK&ust=1700182231341000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIii9sCmx4IDFQAAAAAdAAAAABAE'
+    },
+    ]
+},
+
+{
+	id_proyecto: 003,
+	nombre: 'Wildlife TRAPS',
+	descripcion: 'Especies afectadas por caza indiscriminada',
+	fecha_creacion: new Date(2013,02,10),
+	fecha_finalizada: new Date(2023,07,12),
+	organizaciones:[{
+    id_organizacion: 001,
+	nombre:'Conservación Amazonia',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FConservacionAmazonica%2F&psig=AOvVaw1La4pMgBusiwFMSdncu6qe&ust=1700182178769000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCz-qemx4IDFQAAAAAdAAAAABAE'
+    },
+    {
+    id_organizacion: 002,
+	nombre:'Fundación Sierra Blanca',
+	foto: ''
+    },
+    {
+    id_organizacion: 003,
+	nombre:'ONG Marinos del Pacífico',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ecoceanica.org%2F&psig=AOvVaw1XLvl7IEg7PF82BFhaxUCK&ust=1700182231341000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIii9sCmx4IDFQAAAAAdAAAAABAE'
+    },
+    ]
+},
+
+{
+	id_proyecto: 004,
+	nombre: 'Integrated Tiger Habitat Conservation Programme – Phase II',
+	descripcion: 'Tigres',
+	fecha_creacion: new Date(2018,12,04),
+	fecha_finalizada: new Date(2024,12,30),
+	organizaciones:[{
+    id_organizacion: 001,
+	nombre:'Conservación Amazonia',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FConservacionAmazonica%2F&psig=AOvVaw1La4pMgBusiwFMSdncu6qe&ust=1700182178769000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCz-qemx4IDFQAAAAAdAAAAABAE'
+    },
+    {
+    id_organizacion: 002,
+	nombre:'Fundación Sierra Blanca',
+	foto: ''
+    },
+    {
+    id_organizacion: 003,
+	nombre:'ONG Marinos del Pacífico',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ecoceanica.org%2F&psig=AOvVaw1XLvl7IEg7PF82BFhaxUCK&ust=1700182231341000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIii9sCmx4IDFQAAAAAdAAAAABAE'
+    },
+    ]
+},
+
+{
+	id_proyecto: 005,
+	nombre: 'Biodiversity and Protected Area Management II',
+	descripcion: 'Fauna marina africana',
+	fecha_creacion: new Date(2017,06,01),
+	fecha_finalizada: new Date(2025,04,01),
+	organizaciones:[{
+    id_organizacion: 001,
+	nombre:'Conservación Amazonia',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FConservacionAmazonica%2F&psig=AOvVaw1La4pMgBusiwFMSdncu6qe&ust=1700182178769000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCz-qemx4IDFQAAAAAdAAAAABAE'
+    },
+    {
+    id_organizacion: 002,
+	nombre:'Fundación Sierra Blanca',
+	foto: ''
+    },
+    {
+    id_organizacion: 003,
+	nombre:'ONG Marinos del Pacífico',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ecoceanica.org%2F&psig=AOvVaw1XLvl7IEg7PF82BFhaxUCK&ust=1700182231341000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIii9sCmx4IDFQAAAAAdAAAAABAE'
+    },
+    ]
+},
+
+{
+	id_proyecto: 006,
+	nombre: 'Integrated Tiger Habitat Conservation Programme – Phase III',
+	descripcion: 'Tigres',
+	fecha_creacion: new Date(2020,12,11),
+	fecha_finalizada: new Date(2025,01,30),
+	organizaciones:[{
+    id_organizacion: 001,
+	nombre:'Conservación Amazonia',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FConservacionAmazonica%2F&psig=AOvVaw1La4pMgBusiwFMSdncu6qe&ust=1700182178769000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCz-qemx4IDFQAAAAAdAAAAABAE'
+    },
+    {
+    id_organizacion: 002,
+	nombre:'Fundación Sierra Blanca',
+	foto: ''
+    },
+    {
+    id_organizacion: 003,
+	nombre:'ONG Marinos del Pacífico',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ecoceanica.org%2F&psig=AOvVaw1XLvl7IEg7PF82BFhaxUCK&ust=1700182231341000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIii9sCmx4IDFQAAAAAdAAAAABAE'
+    },
+    ]
+},
+
+{
+	id_proyecto: 007,
+	nombre: 'Integrated Tiger Habitat Conservation Programme – Phase IV',
+	descripcion: 'Tigres',
+	fecha_creacion: new Date(2021,11,04),
+	fecha_finalizada: new Date(2025,11,07),
+	organizaciones:[{
+    id_organizacion: 001,
+	nombre:'Conservación Amazonia',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FConservacionAmazonica%2F&psig=AOvVaw1La4pMgBusiwFMSdncu6qe&ust=1700182178769000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCz-qemx4IDFQAAAAAdAAAAABAE'
+    },
+    {
+    id_organizacion: 002,
+	nombre:'Fundación Sierra Blanca',
+	foto: ''
+    },
+    {
+    id_organizacion: 003,
+	nombre:'ONG Marinos del Pacífico',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ecoceanica.org%2F&psig=AOvVaw1XLvl7IEg7PF82BFhaxUCK&ust=1700182231341000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIii9sCmx4IDFQAAAAAdAAAAABAE'
+    },
+    ]
+},
+
+{
+	id_proyecto: 008,
+	nombre: 'Amazonia 2.0',
+	descripcion: 'Especies del Amazonas',
+	fecha_creacion: new Date(2014,12,24),
+    fecha_finalizada: new Date(2016,12,23),
+   	organizaciones:[{
+    id_organizacion: 001,
+	nombre:'Conservación Amazonia',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FConservacionAmazonica%2F&psig=AOvVaw1La4pMgBusiwFMSdncu6qe&ust=1700182178769000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCz-qemx4IDFQAAAAAdAAAAABAE'
+    },
+    {
+    id_organizacion: 002,
+	nombre:'Fundación Sierra Blanca',
+	foto: ''
+    },
+    {
+    id_organizacion: 003,
+	nombre:'ONG Marinos del Pacífico',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ecoceanica.org%2F&psig=AOvVaw1XLvl7IEg7PF82BFhaxUCK&ust=1700182231341000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIii9sCmx4IDFQAAAAAdAAAAABAE'
+    },
+    ]
+},
+
+{
+	id_proyecto: 009,
+	nombre: 'Together for the Environment Project in Serbia',
+	descripcion: 'Biodiversidad serbia',
+	fecha_creacion: new Date(2023,01,01),
+	fecha_finalizada: new Date(2027,04,28),
+	organizaciones:[{
+    id_organizacion: 001,
+	nombre:'Conservación Amazonia',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FConservacionAmazonica%2F&psig=AOvVaw1La4pMgBusiwFMSdncu6qe&ust=1700182178769000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCz-qemx4IDFQAAAAAdAAAAABAE'
+    },
+    {
+    id_organizacion: 002,
+	nombre:'Fundación Sierra Blanca',
+	foto: ''
+    },
+    {
+    id_organizacion: 003,
+	nombre:'ONG Marinos del Pacífico',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ecoceanica.org%2F&psig=AOvVaw1XLvl7IEg7PF82BFhaxUCK&ust=1700182231341000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIii9sCmx4IDFQAAAAAdAAAAABAE'
+    },
+    ]
+},
+
+{
+	id_proyecto: 010,
+	nombre: 'Support to the IUCN SSC African Elephant Specialist Group (AFESF) to enable ongoing monitoring of the status of Africa`s elephant populations facilitate reporting to the CITES Standing Committee on the conservations status of African Elephants',
+	descripcion: 'Elefantes Africanos',
+	fecha_creacion: new Date(2020,03,02),
+	fecha_finalizada: new Date(2024,06,30),
+	organizaciones:[{
+    id_organizacion: 001,
+	nombre:'Conservación Amazonia',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FConservacionAmazonica%2F&psig=AOvVaw1La4pMgBusiwFMSdncu6qe&ust=1700182178769000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCz-qemx4IDFQAAAAAdAAAAABAE'
+    },
+    {
+    id_organizacion: 002,
+	nombre:'Fundación Sierra Blanca',
+	foto: ''
+    },
+    {
+    id_organizacion: 003,
+	nombre:'ONG Marinos del Pacífico',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ecoceanica.org%2F&psig=AOvVaw1XLvl7IEg7PF82BFhaxUCK&ust=1700182231341000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIii9sCmx4IDFQAAAAAdAAAAABAE'
+    },
+    ]
+},
+
+]);
+
+
+db.organizaciones1.insertMany([ //cada proyecto crea sus coleccion de organizaciones
+
+{
+	id_organizacion: 001,
+	nombre:'Conservación Amazonia',
+	sector: 'Conservación de la Biodiversidad',
+	descripcion: 'Organización dedicada a la protección de la selva amazónica y sus especies en peligro de extinción.',
+	relacion: 'Fundadora',
+	foto: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FConservacionAmazonica%2F&psig=AOvVaw3nczE_29JgvuuaTPClmlY3&ust=1700182347096000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKCjy_emx4IDFQAAAAAdAAAAABAJ'
+
+},
+
+{
+	id_organizacion: 002,
+	nombre: 'Fundación Sierra Blanca',
+	sector: 'Conservación de Ecosistemas Terrestres',
+	descripcion: 'Trabajamos para preservar los ecosistemas de alta montaña y su flora y fauna únicas.',
+	relacion:'Apoyo economico',
+	foto:''
+
+},
+
+{
+	id_organizacion: 003,
+	nombre: 'ONG Marinos del Pacífico',
+	sector: 'Conservación Marina',
+	descripcion: 'Nuestra misión es la protección de los océanos y la vida marina a lo largo de la costa del Pacífico.',
+	relacion:'Apoyo economico',
+	foto:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ecoceanica.org%2F&psig=AOvVaw2otJ9mZYOJuo5UbARfJT48&ust=1700182383022000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPCKz4inx4IDFQAAAAAdAAAAABAE',
+
+
+},
+
+{
+	id_organizacion: 004,
+	nombre: 'Reserva Natural Andina',
+	sector: 'Conservación de Áreas Protegidas',
+	descripcion: 'Administradores de áreas protegidas en las montañas andinas, promoviendo la conservación y el ecoturismo sostenible.',
+	relacion:'Apoyo economico',
+	foto:''
+
+},
+
+{
+	id_organizacion: 005,
+	nombre: 'Asociación Selva Viva',
+	sector: 'Conservación de Bosques Tropicales',
+	descripcion: 'Trabajamos para combatir la deforestación y proteger la biodiversidad de los bosques tropicales.',
+	relacion:'Apoyo economico',
+	foto:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fassociationselvaviva%2F&psig=AOvVaw3jUnBH1f46b5y6X4SNDkEk&ust=1700182436190000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKj-jKKnx4IDFQAAAAAdAAAAABAE',
+
+},
+
+{
+	id_organizacion: 006,
+	nombre: 'Red de Conservadores Avícolas',
+	sector: 'Conservación de Aves',
+	descripcion: 'Promovemos la conservación de aves en peligro y su hábitat en todo el país.',
+	relacion:'Apoyo economico',
+	foto:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fseleccionesavicolas.com%2Favicultura%2F2018%2F08%2Fel-agua-en-avicultura-volumen-y-presion&psig=AOvVaw30ewhKCsVbWZwEcIShymba&ust=1700182454499000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJCn56qnx4IDFQAAAAAdAAAAABAE',
+
+
+},
+
+{
+	id_organizacion: 007,
+	nombre: 'Alianza por los Humedales',
+	sector: 'Conservación de Humedales',
+	descripcion: 'Defendemos la importancia de los humedales y luchamos por su protección y restauración.',
+	relacion:'Apoyo economico',
+	foto:'Alianza por los Humedales'
+
+},
+
+{
+	id_organizacion: 008,
+	nombre: 'Fundación Tierras Salvajes',
+	sector: 'Conservación de Hábitats',
+	descripcion: 'Nos dedicamos a la preservación de los hábitats naturales y la restauración de áreas degradadas.',
+	relacion:'Apoyo economico',
+	foto:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fp%2FCuR5xlhuWz9%2F&psig=AOvVaw1OGgIMxxCFs8phkedHJRdw&ust=1700182522498000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCODQpcunx4IDFQAAAAAdAAAAABAE'
+
+},
+
+{
+	id_organizacion: 009,
+	nombre: 'Conservación Marina Perú',
+	sector: 'Conservación Marina',
+	descripcion: 'Protegemos los ecosistemas marinos costeros y promovemos la pesca sostenible.',
+	relacion:'Apoyo economico',
+	foto:'Conservación Marina Perú'
+
+},
+
+{
+	id_organizacion: 010,
+	nombre: 'Alianza para el Jaguar',
+	sector: 'Conservación de Especies',
+	descripcion: 'Trabajamos en la conservación y recuperación de poblaciones de jaguares en Perú.',
+	relacion:'Apoyo economico',
+	foto:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FAlianzaNacionalJaguarMexico%2F&psig=AOvVaw2tGzdMnA0WbCHNvERWvkBl&ust=1700182589200000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIiFyeunx4IDFQAAAAAdAAAAABAF'
+
+},
+]);
